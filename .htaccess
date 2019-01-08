@@ -4,3 +4,8 @@
     RewriteCond %{REQUEST_FILENAME}\.html -f
     RewriteRule ^(.*)$ $1.html
 </IfModule>
+    <IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{HTTPS} !on
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+</IfModule>
