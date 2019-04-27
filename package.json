@@ -1,0 +1,37 @@
+{
+  "name": "lucashiago.github.io",
+  "version": "1.0.0",
+  "description": "Vue and Express",
+  "main": "index.js",
+  "scripts": {
+    "start":  "node server/index.js",
+    "dev":    "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasHiago/lucashiago.github.io.git"
+  },
+  "keywords": [
+    "An",
+    "app",
+    "with",
+    "vue/express",
+    "and",
+    "mongoDB"
+  ],
+  "author": "Lucas Hiago",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LucasHiago/lucashiago.github.io/issues"
+  },
+  "homepage": "https://github.com/LucasHiago/lucashiago.github.io#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
