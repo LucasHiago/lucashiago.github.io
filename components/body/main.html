@@ -1,0 +1,21 @@
+<div id="presentation"></div>
+
+<div id="codding"></div>
+
+<script>
+    $(document).ready(function() {
+        const ATOMS = 'atoms/';
+        //IF CODDING
+        if ($('#codding').find) {
+            $('#codding').load('./components/' + ATOMS + 'code.html');
+        } else {
+            console.error('Não carregou!');
+        }
+
+        if ($('#presentation').find) {
+            $('#presentation').load('./components/' + ATOMS + 'presentation.html');
+        } else {
+            console.error('Não carregou!');
+        }
+    });
+</script>

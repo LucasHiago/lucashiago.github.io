@@ -1,0 +1,219 @@
+body {
+    overflow: -webkit-paged-y;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    opacity: 0.5;
+    -webkit-animation: canvasChange 4s infinite alternate;
+    animation: canvasChange 4s infinite alternate;
+}
+
+@keyframes canvasChange {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.1;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.imported {
+    background: black;
+}
+
+.menu-opener2,
+.menu-opener {
+    color: white;
+}
+
+.on-top {
+    transform: rotate(-90deg);
+}
+
+.side-bar.side-push {
+    overflow: hidden;
+}
+
+.bg-primary {
+    background: #8b4df9;
+}
+
+.color-primary {
+    color: #8b4df9;
+}
+
+.adj-bg{
+    background:#ff9800;
+}
+
+.adj-color{
+    color:#ff9800;
+}
+
+.card textarea {
+    background: #22292f;
+    border: 0.2em solid #8b4df9;
+    padding: 1.5em;
+    margin: 2.5em;
+    min-width: 12em;
+    min-height: 12em;
+    position: relative;
+    border-radius: .25rem;
+}
+
+.card#html textarea {
+    left: 12em;
+    top: 1em;
+}
+
+.card#css textarea {
+    left: 0em;
+    top: 3em;
+}
+
+.card#js textarea {
+    left: -12em;
+    top: 5em;
+}
+
+.card.is-shadow textarea {
+    -webkit-box-shadow: 1px 1px 7px 1px rgba(172, 127, 255, 0.61);
+    -moz-box-shadow: 1px 1px 7px 1px rgba(172, 127, 255, 0.61);
+    box-shadow: 1px 1px 7px 1px rgba(172, 127, 255, 0.61);
+}
+
+.result-frame iframe#ifames {
+    height: 85%;
+    width: 80%;
+    background: #f2f2f2;
+    border: 0;
+    padding: 1em;
+    border-radius: 0.3em;
+    -webkit-box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.15);
+    margin: 1em auto;
+}
+
+.box {
+    display: inline-flex;
+    height: 34.59em;
+}
+
+.fixed-bot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#html, #css, #js {
+    height: 14.25em;
+    width: 80%;
+    border-radius: .3em;
+    margin: 2% auto;
+    -webkit-box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.15);
+    box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.15);
+}
+
+body.nav-active #html, body.nav-active #css, body.nav-active #js {
+    transition: all .2s;
+    width: 50%;
+    margin-left: 50%;
+}
+
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+iframe#iframe {
+    width: 80%;
+    border: 0;
+    border-radius: .3em;
+    padding: 1%;
+    margin: 2% auto;
+    -webkit-box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.15);
+    box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.15);
+}
+
+
+.ace_scrollbar-v, .ace_scrollbar-h{
+    opacity: 0.05;
+}
+
+.ace-monokai .ace_gutter {
+    background: #2F3129;
+    color: #8F908A;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+}
+
+.ace_editor .ace_marker-layer .ace_bracket {
+    display: none;
+}
+button#EditThisCode, button#SaveThisCode {
+    z-index: 1;
+    border: 0;
+    margin-top: 1%;
+    position: absolute;
+    padding: 0.05em 1em;
+    border-radius: .3em;
+    color: white;
+}
+button#EditThisCode {
+    background: #8BC34A;
+    right: 12%;
+}
+button#SaveThisCode {
+    background: #f92665;
+    right: 3%;
+}
+
+#footer {
+    z-index: 9;
+    background: white;
+}

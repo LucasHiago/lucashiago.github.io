@@ -1,0 +1,20 @@
+<div class="holder bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="#" class="logo pull-left">
+                    <img class="logo on-top" src="images/store_logo_inv.png">
+                </a>
+                <a href="#" id="menu-opener" class="menu-opener pull-right fa fa-bars"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $('#menu-opener').on("click", function(e) {
+        e.preventDefault();
+        jQuery("body").toggleClass("nav-active");
+    });
+</script>
