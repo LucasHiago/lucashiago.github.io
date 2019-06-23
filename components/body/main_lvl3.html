@@ -1,0 +1,13 @@
+<div id="catalog"></div>
+
+<script>
+    $(document).ready(function() {
+        const ATOMS = 'atoms/';
+        //IF CODDING
+        if ($('#catalog').find) {
+            $('#catalog').load('.././components/' + ATOMS + 'catalog.html');
+        } else {
+            console.error('Não carregou!');
+        }
+    });
+</script>

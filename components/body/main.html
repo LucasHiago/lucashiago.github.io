@@ -2,12 +2,20 @@
 
 <div id="codding"></div>
 
+<div id="code_ellegant"></div>
+
 <script>
     $(document).ready(function() {
         const ATOMS = 'atoms/';
         //IF CODDING
         if ($('#codding').find) {
             $('#codding').load('./components/' + ATOMS + 'code.html');
+        } else {
+            console.error('Não carregou!');
+        }
+
+        if ($('#code_ellegant').find) {
+            $('#code_ellegant').load('./components/' + ATOMS + 'code_ellegant.html');
         } else {
             console.error('Não carregou!');
         }
