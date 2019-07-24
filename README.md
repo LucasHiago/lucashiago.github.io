@@ -1,8 +1,8 @@
-#Github Pages Lucas Hiago
+# Github Pages Lucas Hiago
 
 Portifólio page Lucas Hiago
 
-#Technologies
+# Technologies
 
 - [x] Node.js
 - [x] React.js
