@@ -1,0 +1,2 @@
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://lucashiago.com/$1 [R,L] 
