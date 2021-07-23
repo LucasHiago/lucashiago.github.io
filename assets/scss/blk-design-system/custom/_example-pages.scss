@@ -292,6 +292,11 @@
   .page-header {
     min-height: 550px;
 
+    @media only screen and (max-width:768px){
+      min-height: auto;
+      padding: 0 15px 5em 15px;
+    }
+
     .container {
       padding-top: 30vh;
     }
@@ -559,6 +564,9 @@
   height: 100.005%;
   opacity: 0.25;
   position: absolute;
+  @media only screen and (max-width:768px){
+    display: none;
+  }
 }
 
 body{
@@ -575,6 +583,10 @@ body{
       position: absolute;
       top: 21.5vh;
       left: 21px;
+
+      @media only screen and (max-width:768px){
+        display: none;
+      }
     }
 
   }

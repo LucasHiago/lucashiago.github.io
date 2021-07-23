@@ -7,8 +7,22 @@
     color: $white;
   }
 
+  .scrolled{
+    .title{
+      @media only screen and (max-width:768px){
+        animation: hideTitle 3s forwards;
+      }
+    }
+  }
+
   .title {
     color: $white;
+  }
+
+  @keyframes hideTitle {
+    to{
+      opacity: 0;
+    }
   }
 
   &.header-small {
