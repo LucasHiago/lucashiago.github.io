@@ -1,0 +1,30 @@
+.portfolio-controller {
+    .page-content {
+        .lucas-presentation {
+            .spotify{
+                left: 0;
+                right: unset;
+            }
+        }
+    }
+
+    .easter-egg-controller{
+        transform: translate(-50vw, 0);
+
+        .title{
+            transform: rotate(-90deg) translate(66px, 20px);
+        }
+
+        .easter-music-controller{
+            .actions{
+                progress{
+                    transform: rotate(-90deg) translate(107px, 104px);
+                }
+            }
+        }
+        
+        &.active{
+            z-index: 9;
+        }
+    }
+}

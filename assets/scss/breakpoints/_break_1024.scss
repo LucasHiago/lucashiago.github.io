@@ -1,0 +1,57 @@
+:root{
+    --padding-container: calc(var(--space-sm) * 2);
+}
+
+.portfolio-controller {
+
+    .stacks{
+        width: 10vw;
+    }
+
+    .easter-egg-controller {
+        .title {
+            transform: rotate(-90deg) translate(65px, 40px);
+        }
+    }
+
+    .page-content {
+        .lucas-presentation{
+            .spotify{
+                transform: translate(-100vw, 0);
+                position: fixed;
+                background: var(--error);
+                z-index: 9;
+                width: auto;
+                max-width: 100vw;
+                padding: calc( var(--space-sm) / 1.25);
+                border-top-right-radius: var(--borders);
+
+                .playlist{
+                    .music-box{
+                        background: white;
+                    }
+
+                    .info{
+                        color:white;
+                        .title, .subtitle, strong {
+                            color:white;
+                        }
+                    }
+                }
+
+                .audio{
+                    .unique-music{
+                        div{
+                            font-size: var(--md);
+                            font-weight: bold;
+                        }
+
+                        i, div{
+                            color:white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
