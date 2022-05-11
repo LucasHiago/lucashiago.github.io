@@ -1,0 +1,117 @@
+form, .custom-donate{
+    padding: var(--space-md);
+    margin: var(--space-md) 0;
+    border-radius: var(--borders);
+    background: white;
+
+    i{
+        color: var(--third-color);
+    }
+
+    .control-input{
+        position: relative;
+        input{
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, .15);
+            font-size: var(--md);
+            border-radius: var(--bordern);
+            font-family: var(--font-roboto);
+            margin: var(--sm) 0;
+            padding: var(--space-md);
+    
+            &.success{
+                border-color: var(--success);
+                font-weight: bold;
+            }
+    
+        }
+
+        .invalid-values {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin-right: var(--space-sm);
+            padding: 0 calc(var(--space-sm) / 1.85);
+            color: var(--error);
+            background: white;
+            span{
+                font-size: var(--sm);
+                font-family: var(--font-roboto);
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+
+        &.four-fields{
+            display: flex;
+            justify-content: space-between;
+            input{
+                margin: 0 var(--space-sm) 0 0;
+                flex: 1 auto;
+                max-width: 15%;
+
+                &:first-child{
+                    max-width: 50%;
+                }
+
+                &:last-child{
+                    margin: 0;
+                }
+            }
+        }
+
+        &.three-fields{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            input{
+
+                &:first-child{
+                    width: 100%;
+                }
+
+                &:nth-child(2){
+                    margin: 0 var(--space-sm) 0 0;
+                }
+    
+                &:nth-child(2), &:last-child{
+                    width: 49%;
+                }
+            }
+        }
+
+        &.address{
+            .hide-address{
+                height: 0;
+                overflow: hidden;
+                transition: var(--slow);
+
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                input{
+                    width: 49%;
+                    &:first-child, &:nth-child(3){
+                        margin: 0 var(--space-sm) 0 0;
+                    }
+                }
+
+                &.active{
+                    transition: var(--slow);
+                    height: 167px;
+                }
+            }
+        }
+    }
+
+
+}
+
+.custom-donate{
+    input{
+        width: 100%;
+    }
+}

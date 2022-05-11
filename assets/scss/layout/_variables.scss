@@ -1,0 +1,44 @@
+:root{
+    --sixth-color:  #00d95f;
+    --fifth-color: #4e00ff;
+    --fourth-color:  #8a00f2;
+    --third-color:   #dc143c;
+    --danger-color:  #fffb00;
+    --second-color:  #e8e8e8;
+    --primary-color: #3a3a3a;
+    --font-default: mr-eaves-modern, sans-serif;
+
+
+    //DEVICES CONTROLLER
+    --bg-color: white;
+    --outline: rgba(0, 0, 0, .1);
+
+    //FONT
+    --sm: 12px;
+    --md: 16px;
+    --lg: 20px;
+    --xl: 24px;
+
+    //NOTIFICATION COLOR
+    --success: #37f89b;
+    --error: #ff1465;
+
+    //SPACING
+    --space-sm: .5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+
+    //TRANSITION
+    --slow: all .45s;
+    --normal: all .30s;
+    --fast: all .15s;
+    
+    //BORDER
+    --borderb: 1em;
+    --bordern: .5em;
+    --borders: .25em;
+
+    --padding-container: calc(var(--space-lg) * 2) calc(var(--space-lg) * 4);
+
+}

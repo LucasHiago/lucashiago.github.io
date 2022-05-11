@@ -1,0 +1,199 @@
+:root{
+    --padding-container: calc(var(--space-sm) * 2);
+}
+
+body{
+    height: auto;
+    overflow: auto;
+}
+
+.portfolio-controller {
+    flex-direction: column;
+    .stacks{
+        position: fixed;
+        margin-top: calc(var(--space-sm) * 2);
+        bottom: 5%;
+        right: 0;
+        z-index: 9;
+    }
+
+    .page-content {
+        .lucas-presentation{
+            flex-direction: column;
+            align-items: flex-start;
+            .main-pic{
+                margin: -25vw 0 -10vw 0;
+                position: relative;
+                z-index: 0;
+                max-width: 100%;
+                transform: unset;
+
+                .easter-egg{
+                    width: 15px;
+                    height: 15px;
+                    left: 15%;
+                    right: 0;
+                }
+            }
+
+            .stories{
+                z-index: unset;
+                .open-musics{
+                    i{
+                        position: fixed;
+                        top: 30%;
+                        right: 3.5%;
+                        z-index: 99;
+                    }
+                }
+            }
+
+            .spotify{
+                transform: translate(-100vw, 0);
+                position: fixed;
+                background: var(--error);
+                z-index: 9;
+                width: 100vw;
+                max-width: 100vw;
+                padding: calc( var(--space-sm) / 1.25);
+
+                .playlist{
+                    .music-box{
+                        background: white;
+                    }
+
+                    .info{
+                        color:white;
+                        .title, .subtitle, strong {
+                            color:white;
+                        }
+                    }
+                }
+
+                .audio{
+                    .unique-music{
+                        div{
+                            font-size: var(--md);
+                            font-weight: bold;
+                        }
+
+                        i, div{
+                            color:white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bg-chart{
+        position: fixed;
+        transform: scale(2);
+        height: auto;
+        bottom: 48%;
+    }
+
+    .easter-egg-controller{
+        transform: translate(-100vw, 0);
+
+        .title{
+            transform: rotate(-90deg) translate(59px, 3.5vh);
+        }
+
+        .easter-music-controller{
+            .actions{
+                progress{
+                    transform: rotate(-90deg) translate(28.65vw, 11.7vh);
+                }
+            }
+        }
+    }
+
+
+
+    .modal-controller{
+        z-index: 999;
+
+        .btn, input, input::placeholder{
+            text-transform: uppercase;
+            font-size: var(--md);
+            max-height: 49px;
+        }
+
+        .btn{
+            &.checkout{
+                max-height: 100%;
+            }
+        }
+
+        .modal-content{
+            padding: var(--space-sm);
+
+            .issuer{
+                right: calc(24px - var(--space-md));
+            }
+
+            .qrCode{
+                top: 5vh;
+                left: -1px;
+                z-index: 9;
+
+                &.active{
+                    transition: var(--slow);
+                    width: calc(100vw - calc(var(--space-sm) * 2) + 1px);
+                    height: 80vh;
+                    margin: 0 var(--space-sm);
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        form, .custom-donate {
+            .control-input{
+
+                &.three-fields{
+                    input{
+                        &:nth-child(2), &:last-child{
+                            width: 48%;
+                        }
+                    }
+                }
+
+                &.address{
+                    .hide-address{
+                        input{
+                            width: 48%;
+                        }
+                    }
+                }
+
+                &.four-fields {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    align-items: center;
+    
+                    input{
+                        margin: 0 var(--space-sm) 0 0;
+                        max-width: 30%;
+                        &:first-child{
+                            max-width: 100%;
+                            margin: var(--space-md) 0 var(--space-md) 0;
+                        }
+                        &:last-child{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
