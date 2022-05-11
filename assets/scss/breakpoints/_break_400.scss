@@ -1,0 +1,16 @@
+.portfolio-controller {
+    .easter-egg-controller {
+
+        .title{
+            transform: rotate(-90deg) translate(51px, 33px);
+        }
+
+        .easter-music-controller {
+            .actions {
+                progress {
+                    transform: rotate(-90deg) translate(110px, 106px);
+                }
+            }
+        }
+    }
+}
