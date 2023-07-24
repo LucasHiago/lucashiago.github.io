@@ -1,0 +1,59 @@
+// @for $i from 0 through 255 {
+//     .visualizer-music{
+//         span{
+//             &[data-value="#{$i}"]{
+//                 height: #{$i}px !important;
+//                 display:block;
+//                 background: black;
+//             }
+//         }
+//     }
+// }
+
+.easter-egg{
+    z-index: 9;
+}
+
+.layer-front{
+    mix-blend-mode: multiply;
+    z-index: 3;
+}
+
+.visualizer-controller {
+    transform: rotate(45deg) translate(-62px, 5px) skew(-3deg, -6deg);
+    overflow: hidden;
+    width: 261px;
+    height: 299px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* background: black; */
+    opacity: .5;
+    z-index: -1;
+
+    .visualizer-music{
+        display: flex;
+        position: absolute;
+        bottom: 0px;
+        width: 323px;
+        height: 300px;
+        right: 20px;
+        transform: rotate(137deg) translate(-40px, -92px);
+        z-index: -1;
+        span{
+            flex: 1;
+            height: 0;
+            display: block;
+            transition: all .45s;
+            width: 12px;
+            background: linear-gradient(180deg, rgba(0,217,95,1) 100%, rgba(0,0,0,1) 0%);
+            &:nth-child(2n){
+                background: linear-gradient(180deg, rgba(226, 63, 97,1) 100%, rgba(0,0,0,1) 0%);
+            }
+            &:nth-child(3n){
+                background: linear-gradient(180deg, rgba(0, 0, 0, 1) 100%, rgba(0,0,0,1) 0%);
+            }
+        }
+    }
+}
+
